@@ -11,6 +11,11 @@
 		position: absolute;
 		inset: 0;
 		content: "";
+		transition: 0.2s ease-in-out;
+		cursor: pointer;
+	}
+	&:hover::before {
+		background: $primary-peach;
 	}
 
 	img {
