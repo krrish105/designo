@@ -1,0 +1,15 @@
+.footer {
+	background: #1d1c1e;
+	&__top {
+		margin-top: 10rem;
+	}
+	&__bottom {
+		padding-top: 9rem;
+		padding-bottom: 4.5rem;
+		display: flex;
+		justify-content: space-between;
+		nav a {
+			color: white;
+		}
+	}
+}

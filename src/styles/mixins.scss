@@ -1,0 +1,10 @@
+@mixin backdrop() {
+	&::before {
+		opacity: 0.496884286403656;
+		background: #000;
+		position: absolute;
+		inset: 0;
+		content: "";
+		border-radius: $border-radius-card;
+	}
+}

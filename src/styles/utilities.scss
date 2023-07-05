@@ -1,0 +1,32 @@
+.container {
+	max-width: $max-width;
+	margin: 0 auto;
+	padding-inline: 1rem;
+}
+
+.btn {
+	cursor: pointer;
+	border: 0;
+	transition: 0.2s ease-in-out;
+	padding: 1.12rem 1.5rem;
+	border-radius: $border-radius-btn;
+	font-size: 15px;
+	font-weight: 500;
+	width: fit-content;
+	letter-spacing: 0.0625rem;
+}
+.btn-dark {
+	background-color: $primary-white;
+	color: $secondary-black;
+	&:hover {
+		background-color: $secondary-peach;
+		color: $primary-white;
+	}
+}
+.btn-light {
+	background-color: $primary-peach;
+	color: $primary-white;
+	&:hover {
+		background-color: $secondary-peach;
+	}
+}

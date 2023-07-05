@@ -1,0 +1,38 @@
+.hero {
+	display: flex;
+	background-color: $primary-peach;
+	color: #fff;
+	border-radius: $border-radius-card;
+	position: relative;
+	height: 38rem;
+	overflow: hidden;
+	&__content {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		padding-left: 5.94rem;
+		max-width: 36rem;
+		button {
+			text-transform: uppercase;
+		}
+	}
+	&__heading {
+		font-size: 3rem;
+		font-weight: 500;
+		line-height: 3rem;
+		margin-bottom: 1.4rem;
+	}
+	&__desc {
+		font-size: 1rem;
+		font-weight: 400;
+		line-height: 1.625rem;
+		margin-bottom: 2.5rem;
+	}
+	img {
+		position: absolute;
+		right: 0;
+	}
+	&__phoneImg {
+		bottom: -200px;
+	}
+}
