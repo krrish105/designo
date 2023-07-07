@@ -13,6 +13,7 @@ const ServicesSection = () => {
 				]}
 				imgWidth={541}
 				imgHeight={640}
+				url='web-design'
 			/>
 			<Services
 				heading='App Design'
@@ -23,6 +24,7 @@ const ServicesSection = () => {
 				]}
 				imgWidth={541}
 				imgHeight={308}
+				url='app-design'
 			/>
 			<Services
 				heading='Graphic Design'
@@ -33,6 +35,7 @@ const ServicesSection = () => {
 				]}
 				imgWidth={541}
 				imgHeight={308}
+				url='graphic-design'
 			/>
 		</div>
 	);

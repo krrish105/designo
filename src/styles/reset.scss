@@ -13,6 +13,7 @@ body {
 	font-weight: 400;
 	font-size: $font-main;
 	line-height: 26px;
+	min-width: 320px;
 }
 
 a {
@@ -47,4 +48,8 @@ h3 {
 img {
 	max-width: 100%;
 	height: auto;
+}
+
+ul li {
+	list-style: none;
 }

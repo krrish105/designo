@@ -18,3 +18,51 @@ nav ul {
 		text-transform: uppercase;
 	}
 }
+
+header {
+	.hamburger {
+		display: none;
+	}
+	& > a {
+		display: block;
+		line-height: 1;
+	}
+
+	@media (max-width: $screen-min-laptop) {
+		.hamburger {
+			display: block;
+			background-color: none;
+			border: 0;
+			cursor: pointer;
+		}
+		nav {
+			position: fixed;
+			right: -100%;
+			background-color: rgba($color: #000000, $alpha: 0.5);
+			bottom: 0;
+			top: 92px;
+			transition: all 0.2s ease;
+			z-index: 100;
+			ul {
+				flex-direction: column;
+				justify-content: center;
+				align-items: flex-start;
+				gap: 2rem;
+				padding: 3rem 1.5rem;
+				background: #000;
+				width: 100%;
+				a {
+					color: #fff;
+					font-size: 1.5rem;
+					font-weight: 400;
+					line-height: 1.5625rem;
+					letter-spacing: 0.125rem;
+				}
+			}
+			&.active {
+				right: 0;
+				width: 100%;
+			}
+		}
+	}
+}

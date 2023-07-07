@@ -5,8 +5,10 @@ const About = ({ image, heading, description }: any) => {
 	return (
 		<div className={style.about__card}>
 			<Image src={image} alt='' width={202} height={202} />
-			<h3>{heading}</h3>
-			<p>{description}</p>
+			<div>
+				<h3>{heading}</h3>
+				<p>{description}</p>
+			</div>
 		</div>
 	);
 };

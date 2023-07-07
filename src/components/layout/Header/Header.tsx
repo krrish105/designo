@@ -6,7 +6,7 @@ const Header = () => {
 	return (
 		<header className={`container ${styles.header}`}>
 			<LogoLink theme='light' />
-			<NavigationBar />
+			<NavigationBar mobileNavAlso={true} />
 		</header>
 	);
 };

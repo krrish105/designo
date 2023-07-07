@@ -1,5 +1,5 @@
 import About from "@/components/atom/About/About";
-import style from "./about.module.scss";
+import style from "./AboutSection.module.scss";
 
 const AboutSection = () => {
 	return (
