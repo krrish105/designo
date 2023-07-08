@@ -7,7 +7,9 @@ export default function Locations() {
 			<Head>
 				<title>Locations | Designo</title>
 			</Head>
-			<LocationMapSection />
+			<main>
+				<LocationMapSection />
+			</main>
 		</>
 	);
 }

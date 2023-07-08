@@ -1,13 +1,12 @@
 import Image from "next/image";
 import Hero from "@/components/molecules/Hero/Hero";
+import string from "@/utils/strings/data.json";
 
 const HomeHero = () => {
 	return (
 		<Hero
-			heading='Award-winning custom designs and digital branding solutions'
-			description='With over 10 years in the industry, we are experienced in creating
-		fully responsive websites, app design, and engaging brand experiences.
-		Find out more about our services.'
+			heading={string[0].home.hero.heading}
+			description={string[0].home.hero.description}
 			location='home'
 		>
 			<picture>

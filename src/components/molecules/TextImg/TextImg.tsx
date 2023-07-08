@@ -1,5 +1,6 @@
 import Image from "next/image";
 import style from "./TextImg.module.scss";
+import parse from "html-react-parser";
 
 const TextImg = ({ heading, description, imgDirection, images }: any) => {
 	return (
@@ -7,7 +8,7 @@ const TextImg = ({ heading, description, imgDirection, images }: any) => {
 			<div className={`${style.textImg} ${style[imgDirection]}`}>
 				<div className={style.textImg__content}>
 					<h2>{heading}</h2>
-					<p>{description}</p>
+					<p>{parse(description)}</p>
 				</div>
 				<div>
 					<picture>

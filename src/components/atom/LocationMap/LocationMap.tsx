@@ -11,7 +11,7 @@ const LocationMap = ({
 }: {
 	location: string;
 	branchName: keyof (typeof string)[0]["location"];
-	mapDirection: any;
+	mapDirection: string;
 }) => {
 	return (
 		<div className={`${style.location} ${style[mapDirection]}`}>

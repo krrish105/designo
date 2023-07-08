@@ -2,17 +2,25 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
+import string from "@/utils/strings/data.json";
 
 const NavigationBar = ({ mobileNavAlso }: any) => {
 	const [showMobileNav, setShowMobileNav] = useState(false);
+	const toggleNav = () => {
+		const hamburger = document.getElementById("hamburger");
+		if (
+			mobileNavAlso &&
+			hamburger &&
+			window.getComputedStyle(hamburger).display === "block"
+		) {
+			setShowMobileNav((prev) => !prev);
+		}
+	};
 
 	return (
 		<>
 			{mobileNavAlso && (
-				<button
-					className='hamburger'
-					onClick={() => setShowMobileNav((prev) => !prev)}
-				>
+				<button className='hamburger' onClick={toggleNav} id='hamburger'>
 					{showMobileNav ? (
 						<Image
 							src='/assets/shared/mobile/icon-close.svg'
@@ -33,30 +41,15 @@ const NavigationBar = ({ mobileNavAlso }: any) => {
 
 			<nav className={showMobileNav ? "active" : ""}>
 				<ul>
-					<li>
-						<Link
-							href='/company'
-							onClick={() => mobileNavAlso && setShowMobileNav((prev) => !prev)}
-						>
-							Our Company
-						</Link>
-					</li>
-					<li>
-						<Link
-							href='/locations'
-							onClick={() => mobileNavAlso && setShowMobileNav((prev) => !prev)}
-						>
-							Locations
-						</Link>
-					</li>
-					<li>
-						<Link
-							href='/contact'
-							onClick={() => mobileNavAlso && setShowMobileNav((prev) => !prev)}
-						>
-							Contact
-						</Link>
-					</li>
+					{string[0].navlinks.map((el: any, i: any) => {
+						return (
+							<li key={el.name}>
+								<Link href={el.url} onClick={toggleNav}>
+									{el.name}
+								</Link>
+							</li>
+						);
+					})}
 				</ul>
 			</nav>
 		</>

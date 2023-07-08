@@ -7,15 +7,66 @@
 				"mail": "contact@designo.co"
 			},
 			"au": {
-				"address": "3886 Wellington Street<br />Toronto, Ontario M9C 3J5",
-				"phone": "+1 253-863-8967",
-				"mail": "contact@designo.co"
+				"address": "19 Balonne Street<br />New South Wales 2443",
+				"phone": "(02) 6720 9092",
+				"mail": "contact@designo.au"
 			},
 			"uk": {
-				"address": "3886 Wellington Street<br />Toronto, Ontario M9C 3J5",
-				"phone": "+1 253-863-8967",
-				"mail": "contact@designo.co"
+				"address": "13 Colorado Way<br />Rhyd-y-fro SA8 9GA",
+				"phone": "078 3115 1400",
+				"mail": "contact@designo.uk"
 			}
+		},
+		"navlinks": [
+			{
+				"name": "Our Company",
+				"url": "/company"
+			},
+			{
+				"name": "Locations",
+				"url": "/locations"
+			},
+			{
+				"name": "Contact",
+				"url": "/contact"
+			}
+		],
+		"company": {
+			"hero": {
+				"heading": "About Us",
+				"description": "Founded in 2010, we are a creative agency that produces lasting results for our clients. We’ve partnered with many startups, corporations, and nonprofits alike to craft designs that make real impact. We’re always looking forward to creating brands, products, and digital experiences that connect with our clients’ audiences."
+			},
+			"worldClass": {
+				"heading": "World-class talent",
+				"description": "We are a crew of strategists, problem-solvers, and technologists. Every design is thoughtfully crafted from concept to launch, ensuring success in its given market. We are constantly updating our skills in a myriad of platforms.<br /><br />Our team is multi-disciplinary and we are not merely interested in form — content and meaning are just as important. We give great importance to craftsmanship, service, and prompt delivery. Clients have always been impressed with our high-quality outcomes that encapsulates their brand’s story and mission."
+			},
+			"realDeal": {
+				"heading": "The real deal",
+				"description": "As strategic partners in our clients’ businesses, we are ready to take on any challenge as our own. Solving real problems require empathy and collaboration, and we strive to bring a fresh perspective to every opportunity. We make design and technology more accessible and give you tools to measure success.<br /><br />We are visual storytellers in appealing and captivating ways. By combining business and marketing strategies, we inspire audiences to take action and drive real results."
+			}
+		},
+		"home": {
+			"hero": {
+				"heading": "Award-winning custom designs and digital branding solutions",
+				"description": "With over 10 years in the industry, we are experienced in creating fully responsive websites, app design, and engaging brand experiences. Find out more about our services."
+			},
+			"about": [
+				{
+					"image": "/assets/home/desktop/illustration-passionate.svg",
+					"heading": "Passionate",
+					"description": "Each project starts with an in-depth brand research to ensure we only create products that serve a purpose. We merge art, design, and technology into exciting new solutions."
+				},
+				{
+					"image": "/assets/home/desktop/illustration-resourceful.svg",
+					"heading": "Resourceful",
+					"description": "Everything that we do has a strategic purpose. We use an agile approach in all of our projects and value customer collaboration. It guarantees superior results that fulfill our clients’ needs."
+				},
+				{
+					"image": "/assets/home/desktop/illustration-friendly.svg",
+					"heading": "Friendly",
+					"description": "We are a group of enthusiastic folks who know how to put people first. Our success depends on our customers, and we strive to give them the best experience a company can provide."
+				}
+			]
 		}
 	}
 ]
