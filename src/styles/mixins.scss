@@ -8,3 +8,9 @@
 		border-radius: $border-radius-card;
 	}
 }
+
+@mixin container() {
+	max-width: $max-width;
+	margin: 0 auto;
+	padding-inline: 1rem;
+}

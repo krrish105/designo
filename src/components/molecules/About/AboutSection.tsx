@@ -1,9 +1,8 @@
 import About from "@/components/atom/About/About";
-import style from "./AboutSection.module.scss";
 
 const AboutSection = () => {
 	return (
-		<div className={style.about}>
+		<div className='flexComponent container'>
 			<About
 				image='/assets/home/desktop/illustration-passionate.svg'
 				heading='Passionate'

@@ -1,7 +1,6 @@
 .footer {
 	margin-top: 10rem;
 	&__top {
-		border-radius: 0.9375rem;
 		background: #e7816b;
 		margin-bottom: -70px;
 		z-index: 10;
@@ -36,8 +35,8 @@
 		background: #1d1c1e;
 		box-shadow: 0 0 0 100vmax #1d1c1e;
 		clip-path: inset(0 -100vmax);
-		padding-top: 9rem;
-		padding-bottom: 4.5rem;
+
+		padding: 9rem 1rem 4.5rem;
 
 		&,
 		nav a {
@@ -79,7 +78,11 @@
 		}
 	}
 	@media (min-width: $screen-min-laptop) {
+		& > div {
+			@include container();
+		}
 		&__top {
+			border-radius: 0.9375rem;
 			padding: 4.5rem 6rem;
 			display: flex;
 			justify-content: space-between;

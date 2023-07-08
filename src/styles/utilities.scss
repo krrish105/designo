@@ -34,3 +34,16 @@
 		background-color: $secondary-peach;
 	}
 }
+
+.flexComponent {
+	margin-top: 10rem;
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	gap: 2rem;
+	flex-direction: column;
+	@media (min-width: $screen-min-laptop) {
+		flex-direction: row;
+		gap: 1.5rem;
+	}
+}

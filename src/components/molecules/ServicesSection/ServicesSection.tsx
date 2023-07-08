@@ -3,7 +3,7 @@ import style from "./ServicesSection.module.scss";
 
 const ServicesSection = () => {
 	return (
-		<div className={style.services}>
+		<div className={`${style.services} container`}>
 			<Services
 				heading='Web Design'
 				images={[

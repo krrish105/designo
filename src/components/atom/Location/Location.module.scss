@@ -1,0 +1,14 @@
+.location {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 2rem;
+	.location__image {
+		position: relative;
+		img:last-child {
+			position: absolute;
+			inset: 0;
+		}
+	}
+}

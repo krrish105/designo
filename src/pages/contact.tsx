@@ -1,3 +1,4 @@
+import LocationSection from "@/components/molecules/LocationSection/LocationSection";
 import Head from "next/head";
 
 export default function Contact() {
@@ -6,6 +7,7 @@ export default function Contact() {
 			<Head>
 				<title>Contact | Designo</title>
 			</Head>
+			<LocationSection />
 		</>
 	);
 }

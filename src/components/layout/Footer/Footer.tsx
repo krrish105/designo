@@ -3,11 +3,12 @@ import styles from "./Footer.module.scss";
 import NavigationBar from "@/components/atom/NavigationBar/NavigationBar";
 import SocialMediaNavBar from "@/components/atom/SocialMediaNavBar/SocialMediaNavBar";
 import Link from "next/link";
+import ContactUsInfo from "@/components/atom/ContactUsInfo";
 
 const Footer = () => {
 	return (
 		<footer className={styles.footer}>
-			<div className='container'>
+			<div>
 				<div className={styles.footer__top}>
 					<div>
 						<p>Let’s talk about your project</p>
@@ -33,11 +34,13 @@ const Footer = () => {
 							<br />
 							Toronto, Ontario M9C 3J5
 						</div>
-						<div>
-							Contact Us (Central Office)
-							<br />P : +1 253-863-8967
-							<br />M : contact@designo.co
-						</div>
+
+						<ContactUsInfo
+							phone='+1 253-863-8967'
+							mail='contact@designo.co'
+							branchName='Central Office'
+							showBranch={true}
+						/>
 						<SocialMediaNavBar />
 					</div>
 				</div>

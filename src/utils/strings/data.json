@@ -1,0 +1,21 @@
+[
+	{
+		"location": {
+			"central": {
+				"address": "3886 Wellington Street<br />Toronto, Ontario M9C 3J5",
+				"phone": "+1 253-863-8967",
+				"mail": "contact@designo.co"
+			},
+			"au": {
+				"address": "3886 Wellington Street<br />Toronto, Ontario M9C 3J5",
+				"phone": "+1 253-863-8967",
+				"mail": "contact@designo.co"
+			},
+			"uk": {
+				"address": "3886 Wellington Street<br />Toronto, Ontario M9C 3J5",
+				"phone": "+1 253-863-8967",
+				"mail": "contact@designo.co"
+			}
+		}
+	}
+]

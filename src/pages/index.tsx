@@ -1,5 +1,5 @@
 import AboutSection from "@/components/molecules/About/AboutSection";
-import Hero from "@/components/molecules/Hero/Hero";
+import Hero from "@/components/molecules/Hero/Homepage/HomeHero";
 import ServicesSection from "@/components/molecules/ServicesSection/ServicesSection";
 import Head from "next/head";
 
