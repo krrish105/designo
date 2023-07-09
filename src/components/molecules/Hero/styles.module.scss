@@ -65,12 +65,13 @@
 			width: 100%;
 		}
 	}
+	&__container {
+		margin-bottom: 10rem !important;
+	}
 
 	@media (min-width: $screen-min-tablet) {
 	}
 	@media (min-width: $screen-min-laptop) {
-		max-width: $max-width;
-		margin: 0 auto;
 		border-radius: $border-radius-card;
 		height: 36rem;
 		flex-direction: row;
@@ -108,9 +109,7 @@
 			}
 		}
 		&__container {
-			max-width: $max-width;
-			margin: 0 auto;
-			padding-inline: 1rem;
+			@include container();
 		}
 	}
 	@media (min-width: $screen-min-desktop) {

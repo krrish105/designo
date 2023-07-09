@@ -1,17 +1,18 @@
 import Address from "@/components/atom/Address";
 import ContactUsInfo from "@/components/atom/ContactUsInfo";
 import string from "@/utils/strings/data.json";
-import Image from "next/image";
 import style from "./styles.module.scss";
 
 const LocationMap = ({
 	location,
 	branchName,
 	mapDirection,
+	map,
 }: {
 	location: string;
 	branchName: keyof (typeof string)[0]["location"];
 	mapDirection: string;
+	map: string;
 }) => {
 	return (
 		<div className={`${style.location} ${style[mapDirection]}`}>
@@ -31,14 +32,14 @@ const LocationMap = ({
 					/>
 				</div>
 			</div>
-			<div>
-				<Image
-					src='/assets/locations/desktop/image-map-australia.png'
-					alt=''
-					width={350}
-					height={320}
-				/>
-			</div>
+			<iframe
+				src={map}
+				width='350'
+				height='320'
+				allowFullScreen
+				loading='lazy'
+				referrerPolicy='no-referrer-when-downgrade'
+			></iframe>
 		</div>
 	);
 };
