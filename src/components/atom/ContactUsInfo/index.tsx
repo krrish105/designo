@@ -1,5 +1,3 @@
-import Link from "next/link";
-
 const ContactUsInfo = ({ phone, mail, branchName, showBranch }: any) => {
 	const heading = showBranch
 		? `Contact Us ${
@@ -10,8 +8,8 @@ const ContactUsInfo = ({ phone, mail, branchName, showBranch }: any) => {
 	return (
 		<div>
 			<strong>{heading}</strong>
-			<br />P : <Link href={`tel:${phone}`}>{phone}</Link>
-			<br />M : <Link href={`mailto:${mail}`}>{mail}</Link>
+			<br />P : <a href={`tel:${phone}`}>{phone}</a>
+			<br />M : <a href={`mailto:${mail}`}>{mail}</a>
 		</div>
 	);
 };
