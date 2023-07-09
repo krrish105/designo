@@ -33,10 +33,12 @@
 			position: absolute;
 			right: 0;
 			z-index: 1000;
+			z-index: 0;
 		}
 
 		p {
 			color: $primary-white;
+			z-index: 2;
 		}
 		p:first-of-type {
 			font-size: 2rem;
@@ -51,6 +53,7 @@
 		}
 		a {
 			text-align: center;
+			z-index: 2;
 		}
 	}
 	&__bottom {
