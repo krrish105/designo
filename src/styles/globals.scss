@@ -66,3 +66,18 @@ header {
 		}
 	}
 }
+
+.homeServicesGrid {
+	margin-top: 10rem;
+	display: grid;
+	grid-template-rows: 1fr 1fr;
+	width: 100%;
+	gap: 1.5rem;
+
+	@media (min-width: $screen-min-laptop) {
+		grid-template-columns: 1fr 1fr;
+		& > div:nth-child(1) {
+			grid-row: 1 / 3;
+		}
+	}
+}

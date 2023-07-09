@@ -1,8 +1,8 @@
 import Hero from "@/components/molecules/Hero/Homepage/HomeHero";
-import ServicesSection from "@/components/molecules/ServicesSection/ServicesSection";
 import Head from "next/head";
 import string from "@/utils/strings/data.json";
 import About from "@/components/atom/About/About";
+import ServicesComponentArray from "@/components/molecules/ServicesSection";
 
 export default function Home() {
 	return (
@@ -11,9 +11,15 @@ export default function Home() {
 				<title>Designo</title>
 			</Head>
 			<Hero />
-			<ServicesSection />
+			<div className={`homeServicesGrid container`}>
+				<ServicesComponentArray
+					data={string[0].home.services}
+					imgHeight={600}
+				/>
+			</div>
+
 			<div className='flexComponent container'>
-				{string[0].home.about.map((el: any, i: any) => {
+				{string[0].home.about.map((el, i) => {
 					return (
 						<About
 							key={el.heading}

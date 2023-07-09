@@ -41,7 +41,7 @@ const NavigationBar = ({ mobileNavAlso }: any) => {
 
 			<nav className={showMobileNav ? "active" : ""}>
 				<ul>
-					{string[0].navlinks.map((el: any, i: any) => {
+					{string[0].navlinks.map((el, i) => {
 						return (
 							<li key={el.name}>
 								<Link href={el.url} onClick={toggleNav}>

@@ -23,7 +23,7 @@ const Services = ({ heading, images, imgWidth, imgHeight, url }: any) => {
 						srcSet={images[2]}
 					/>
 					<img
-						src={images[2]}
+						src={images[3]}
 						alt='Flowers'
 						width={imgWidth}
 						height={imgHeight}
