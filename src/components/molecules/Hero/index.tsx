@@ -1,5 +1,5 @@
 import Image from "next/image";
-import style from "./Hero.module.scss";
+import style from "./styles.module.scss";
 import Link from "next/link";
 
 const Hero = ({ heading, description, location, children }: any) => {
@@ -8,8 +8,8 @@ const Hero = ({ heading, description, location, children }: any) => {
 		<div className={style.heroContainer}>
 			<div className={`${style.hero} ${style[locationClass]}`}>
 				<div className={style.hero__content}>
-					<p className={style.hero__heading}>{heading}</p>
-					<p className={style.hero__desc}>{description}</p>
+					<p className='hero__heading'>{heading}</p>
+					<p className='hero__description'>{description}</p>
 					{location === "home" && (
 						<Link href='/company' className='btn btn-dark'>
 							Learn More

@@ -1,5 +1,5 @@
 import string from "@/utils/strings/data.json";
-import Services from "@/components/atom/Services/Services";
+import Services from "@/components/atom/Services";
 
 const ServicesComponentArray = ({ data, imgHeight }: any) => {
 	let servicesArray: any = [];

@@ -1,7 +1,7 @@
-import Hero from "@/components/molecules/Hero/Homepage/HomeHero";
+import Hero from "@/components/molecules/Hero/Homepage";
 import Head from "next/head";
 import string from "@/utils/strings/data.json";
-import About from "@/components/atom/About/About";
+import About from "@/components/atom/About";
 import ServicesComponentArray from "@/components/molecules/ServicesSection";
 
 export default function Home() {

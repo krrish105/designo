@@ -1,5 +1,5 @@
 import Link from "next/link";
-import style from "./Services.module.scss";
+import style from "./styles.module.scss";
 
 const Services = ({ heading, images, imgWidth, imgHeight, url }: any) => {
 	return (

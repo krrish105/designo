@@ -7,7 +7,7 @@
 	@include backdrop;
 	&::before {
 		opacity: 0.5;
-		background: #000;
+		background: $black;
 		position: absolute;
 		inset: 0;
 		content: "";
@@ -34,7 +34,7 @@
 		text-align: center;
 		h2,
 		a {
-			color: #fff;
+			color: $primary-white;
 			font-weight: 500;
 			text-transform: uppercase;
 		}
@@ -64,7 +64,7 @@
 				margin-bottom: 1.25rem;
 			}
 			a {
-				color: #fff;
+				color: $primary-white;
 			}
 		}
 	}

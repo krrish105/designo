@@ -8,7 +8,7 @@
 .hero {
 	display: flex;
 	background-color: $primary-peach;
-	color: #fff;
+	color: $primary-white;
 	position: relative;
 	height: 52rem;
 	overflow: hidden;
@@ -26,17 +26,6 @@
 			margin-inline: auto;
 			margin-top: 1.5rem;
 		}
-	}
-	&__heading {
-		font-weight: 500;
-		margin-bottom: 1.4rem;
-		font-size: 2rem;
-		line-height: 2.25rem;
-	}
-	&__desc {
-		font-weight: 400;
-		font-size: 0.9375rem;
-		line-height: 1.5625rem;
 	}
 	& > div > img {
 		position: absolute;
@@ -119,14 +108,6 @@
 
 		&__content {
 			max-width: 38rem;
-		}
-		&__heading {
-			font-size: 3rem;
-			line-height: 3rem;
-		}
-		&__desc {
-			font-size: 1rem;
-			line-height: 1.625rem;
 		}
 		picture img {
 			right: 0 !important;

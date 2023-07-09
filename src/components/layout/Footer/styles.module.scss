@@ -1,7 +1,7 @@
 .footer {
 	margin-top: 10rem;
 	&__top {
-		background: #e7816b;
+		background: $primary-peach;
 		margin-bottom: -70px;
 		z-index: 10;
 		position: relative;
@@ -11,10 +11,10 @@
 		flex-wrap: wrap;
 		align-items: center;
 		text-align: center;
-		gap: 1rem;
+		gap: $grid-gutter-small;
 
 		p {
-			color: #fff;
+			color: $primary-white;
 		}
 		p:first-of-type {
 			font-size: 2rem;
@@ -32,11 +32,10 @@
 		}
 	}
 	&__bottom {
-		background: #1d1c1e;
-		box-shadow: 0 0 0 100vmax #1d1c1e;
+		background: $primary-black;
+		box-shadow: 0 0 0 100vmax $primary-black;
 		clip-path: inset(0 -100vmax);
-
-		padding: 9rem 1rem 4.5rem;
+		padding: 4.5rem 1rem;
 
 		&,
 		nav a {
@@ -51,9 +50,7 @@
 			display: flex;
 			justify-content: space-between;
 			flex-wrap: wrap;
-			gap: 2rem;
-
-			// In Mobile
+			gap: $grid-gutter;
 			flex-direction: column;
 			align-items: center;
 			text-align: center;
@@ -75,10 +72,13 @@
 			}
 			ul {
 				display: flex;
-				gap: 1rem;
+				gap: $grid-gutter-small;
 				flex-wrap: wrap;
 			}
 		}
+	}
+	&__hasFooterTop &__bottom {
+		padding: 9rem 1rem 4.5rem;
 	}
 	@media (min-width: $screen-min-tablet) {
 		&__top {

@@ -1,5 +1,4 @@
-import Image from "next/image";
-import style from "./TextImg.module.scss";
+import style from "./styles.module.scss";
 import parse from "html-react-parser";
 
 const TextImg = ({ heading, description, imgDirection, images }: any) => {

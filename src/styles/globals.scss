@@ -2,12 +2,21 @@
 @import "./reset.scss";
 @import "./utilities.scss";
 
+.header {
+	padding-block: 2rem;
+	display: flex;
+	justify-content: space-between;
+	@media (min-width: $screen-min-laptop) {
+		padding-block: 4rem;
+	}
+}
+
 nav ul {
 	display: inline-flex;
 	padding-right: 0px;
 	justify-content: center;
 	align-items: flex-start;
-	gap: 2.625rem;
+	gap: 2.6rem;
 	li {
 		list-style: none;
 		color: $secondary-black;
@@ -38,7 +47,7 @@ header {
 		nav {
 			position: fixed;
 			right: -100%;
-			background-color: rgba($color: #000000, $alpha: 0.5);
+			background-color: rgba($color: $black, $alpha: 0.5);
 			bottom: 0;
 			top: 92px;
 			transition: all 0.2s ease;
@@ -47,12 +56,12 @@ header {
 				flex-direction: column;
 				justify-content: center;
 				align-items: flex-start;
-				gap: 2rem;
+				gap: $grid-gutter;
 				padding: 3rem 1.5rem;
-				background: #000;
+				background: $black;
 				width: 100%;
 				a {
-					color: #fff;
+					color: $primary-white;
 					font-size: 1.5rem;
 					font-weight: 400;
 					line-height: 1.5625rem;
@@ -72,12 +81,50 @@ header {
 	display: grid;
 	grid-template-rows: 1fr 1fr;
 	width: 100%;
-	gap: 1.5rem;
+	gap: $grid-gutter-medium;
 
 	@media (min-width: $screen-min-laptop) {
 		grid-template-columns: 1fr 1fr;
 		& > div:nth-child(1) {
 			grid-row: 1 / 3;
 		}
+	}
+}
+
+.contactgrid {
+	display: flex;
+	background-color: $primary-peach;
+	color: $primary-white;
+	padding: 4rem 1.5rem;
+	gap: 4rem;
+
+	flex-direction: column;
+	& > div:first-child {
+		max-width: 28rem;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		gap: $grid-gutter;
+		text-align: center;
+	}
+
+	@media (min-width: $screen-min-tablet) {
+		border-radius: $border-radius-card;
+		padding: 4rem 3.5rem;
+		& > div:first-child {
+			text-align: start;
+		}
+	}
+	@media (min-width: $screen-min-laptop) {
+		padding: 4rem 6rem;
+	}
+	@media (min-width: $screen-min-desktop) {
+		flex-direction: row;
+	}
+}
+
+@media (min-width: $screen-min-tablet) {
+	.contactHeaderContainer {
+		@include container();
 	}
 }

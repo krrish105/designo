@@ -1,4 +1,4 @@
-import Hero from "@/components/molecules/Hero/Hero";
+import Hero from "@/components/molecules/Hero";
 import string from "@/utils/strings/data.json";
 
 const AboutHero = () => {

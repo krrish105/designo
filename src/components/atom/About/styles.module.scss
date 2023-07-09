@@ -4,10 +4,10 @@
 	justify-content: center;
 	align-items: center;
 	text-align: center;
-	gap: 2rem;
+	gap: $grid-gutter;
 	h3,
 	p {
-		color: #333136;
+		color: $secondary-black;
 		line-height: 1.625rem;
 	}
 	h3 {

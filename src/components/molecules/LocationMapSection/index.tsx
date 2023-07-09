@@ -1,4 +1,4 @@
-import LocationMap from "@/components/atom/LocationMap/LocationMap";
+import LocationMap from "@/components/atom/LocationMap";
 
 const LocationMapSection = () => {
 	return (

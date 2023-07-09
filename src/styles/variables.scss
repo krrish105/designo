@@ -14,11 +14,20 @@ $secondary-peach: #ffad9b;
 $secondary-black: #333136;
 $secondary-white: #f1f3f5;
 
+// Common Color
+$black: #000;
+$pale-red: #fdf3f0;
+
 // ============ Font Sizes: ============
-$font-main: 16px;
-$font-heading1: 48px;
-$font-heading2: 40px;
-$font-heading3: 20px;
+$font-main: 1rem;
+$font-heading1: 3rem;
+$font-heading2: 2.5rem;
+$font-heading3: 1.25rem;
+
+// ============ Grid Sizes: ============
+$grid-gutter: 2rem;
+$grid-gutter-medium: 1.5rem;
+$grid-gutter-small: 1rem;
 
 $screen-min-mobile: 320px;
 $screen-max-mobile: 479px;

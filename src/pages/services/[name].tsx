@@ -1,5 +1,5 @@
 import ProjectCard from "@/components/molecules/ProjectCard";
-import style from "./services.module.scss";
+import style from "./styles.module.scss";
 import string from "@/utils/strings/data.json";
 import Head from "next/head";
 import ServicesComponentArray from "@/components/molecules/ServicesSection";
@@ -14,8 +14,10 @@ const ServicesPage = ({ serviceData }: any) => {
 				<div className={style.services__headerContainer}>
 					<div className={style.services__header}>
 						<div>
-							<h1>{serviceData.header.heading}</h1>
-							<p>{serviceData.header.description}</p>
+							<h1 className='hero__heading'>{serviceData.header.heading}</h1>
+							<p className='hero__description'>
+								{serviceData.header.description}
+							</p>
 						</div>
 					</div>
 				</div>

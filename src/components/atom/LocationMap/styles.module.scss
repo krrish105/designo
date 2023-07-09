@@ -5,19 +5,19 @@
 
 	& > div:first-child {
 		width: 100%;
-		background: #fdf3f0;
+		background: $pale-red;
 		padding: 5rem 3rem;
 		order: 1;
 		text-align: center;
 		h2 {
-			color: #e7816b;
+			color: $primary-peach;
 			font-size: 2.5rem;
 			font-weight: 500;
 			line-height: 3rem;
 		}
 		& > div {
 			display: flex;
-			gap: 1.5rem;
+			gap: $grid-gutter-medium;
 			justify-content: space-between;
 			flex-direction: column;
 			flex-wrap: wrap;
@@ -27,12 +27,12 @@
 		display: block;
 		width: 100%;
 		max-height: 20rem;
-		background: #fdf3f0;
+		background: $pale-red;
 	}
 
 	@media (min-width: $screen-min-tablet) {
 		@include container();
-		gap: 2rem;
+		gap: $grid-gutter;
 		& > div:first-child {
 			border-radius: 0.9375rem;
 			text-align: start;

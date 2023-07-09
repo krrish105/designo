@@ -1,5 +1,5 @@
 import Image from "next/image";
-import style from "./card.module.scss";
+import style from "./styles.module.scss";
 
 const ProjectCard = ({ image, heading, description }: any) => {
 	return (

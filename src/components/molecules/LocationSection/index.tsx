@@ -1,4 +1,4 @@
-import Location from "@/components/atom/Location/Location";
+import Location from "@/components/atom/Location";
 
 const LocationSection = () => {
 	return (

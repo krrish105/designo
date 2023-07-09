@@ -1,8 +1,8 @@
-import Address from "@/components/atom/Address/Address";
+import Address from "@/components/atom/Address";
 import ContactUsInfo from "@/components/atom/ContactUsInfo";
 import string from "@/utils/strings/data.json";
 import Image from "next/image";
-import style from "./LocationMap.module.scss";
+import style from "./styles.module.scss";
 
 const LocationMap = ({
 	location,

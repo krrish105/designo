@@ -1,9 +1,9 @@
-import Address from "@/components/atom/Address/Address";
+import Address from "@/components/atom/Address";
 import ContactUsInfo from "@/components/atom/ContactUsInfo";
-import LogoLink from "@/components/atom/LogoLink/LogoLink";
-import NavigationBar from "@/components/atom/NavigationBar/NavigationBar";
-import SocialMediaNavBar from "@/components/atom/SocialMediaNavBar/SocialMediaNavBar";
-import styles from "../Footer.module.scss";
+import LogoLink from "@/components/atom/LogoLink";
+import NavigationBar from "@/components/atom/NavigationBar";
+import SocialMediaNavBar from "@/components/atom/SocialMediaNavBar";
+import styles from "../styles.module.scss";
 import string from "@/utils/strings/data.json";
 
 const FooterBottom = () => {

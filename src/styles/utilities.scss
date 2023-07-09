@@ -10,9 +10,10 @@
 	transition: 0.2s ease-in-out;
 	padding: 1.12rem 1.5rem;
 	border-radius: $border-radius-btn;
-	font-size: 15px;
-	font-weight: 500;
 	width: fit-content;
+	font-size: 0.9375rem;
+	font-weight: 500;
+	line-height: normal;
 	letter-spacing: 0.0625rem;
 	text-transform: uppercase;
 	&:hover {
@@ -40,13 +41,56 @@
 	display: flex;
 	justify-content: space-between;
 	width: 100%;
-	gap: 2rem;
+	gap: $grid-gutter;
 	flex-direction: column;
 	@media (min-width: $screen-min-laptop) {
 		flex-direction: row;
-		gap: 1.5rem;
+		gap: $grid-gutter-medium;
 	}
 }
 .capitalize {
 	text-transform: capitalize;
+}
+
+.form-group {
+	position: relative;
+	.error {
+		position: absolute;
+		right: 0;
+		top: 0;
+		display: grid;
+		grid-template-columns: repeat(2, auto);
+		align-items: center;
+		gap: $grid-gutter-small;
+		span {
+			color: #fff;
+			font-size: 0.75rem;
+			font-weight: 400;
+			line-height: 1.625rem;
+			font-style: italic;
+		}
+	}
+}
+
+.hero {
+	&__heading {
+		font-size: 2rem;
+		line-height: 2.25rem;
+		font-weight: 500;
+		margin-bottom: 1.5rem;
+	}
+	&__description {
+		font-weight: 400;
+		font-size: 1rem;
+		line-height: 1.5625rem;
+	}
+	@media (min-width: $screen-min-desktop) {
+		&__heading {
+			font-size: 3rem;
+			line-height: 3rem;
+		}
+		&__description {
+			line-height: 1.625rem;
+		}
+	}
 }

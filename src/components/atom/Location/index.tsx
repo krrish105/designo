@@ -1,5 +1,5 @@
 import Image from "next/image";
-import style from "./Location.module.scss";
+import style from "./styles.module.scss";
 import Link from "next/link";
 
 const Location = ({ image, location }: any) => {
