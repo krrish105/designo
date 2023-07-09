@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Image from "next/image";
 import ContactForm from "@/components/molecules/ContactForm";
 import LocationSection from "@/components/molecules/LocationSection";
 
@@ -19,6 +20,12 @@ export default function Contact() {
 							your users, drop us a line.
 						</p>
 					</div>
+					<Image
+						src='/assets/contact/desktop/bg-pattern-hero-desktop.svg'
+						width={640}
+						height={640}
+						alt=''
+					/>
 					<ContactForm />
 				</div>
 			</div>

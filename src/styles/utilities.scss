@@ -69,6 +69,13 @@
 			line-height: 1.625rem;
 			font-style: italic;
 		}
+		display: none;
+	}
+	&.hasError {
+		display: block;
+		.error {
+			display: grid;
+		}
 	}
 }
 

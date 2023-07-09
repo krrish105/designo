@@ -7,6 +7,8 @@ const InputElementGroup = ({
 	placeholder,
 	required,
 	autoComplete,
+	ariaRequired,
+	errorMessage,
 }: any) => {
 	return (
 		<div className='form-group'>
@@ -17,9 +19,10 @@ const InputElementGroup = ({
 				placeholder={placeholder}
 				required={required}
 				autoComplete={autoComplete}
+				aria-required={ariaRequired}
 			/>
 			<div className='error'>
-				<span>Can’t be empty</span>
+				<span>{errorMessage}</span>
 				<Image
 					src='/assets/contact/desktop/icon-error.svg'
 					alt=''

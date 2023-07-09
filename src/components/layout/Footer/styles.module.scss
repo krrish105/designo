@@ -1,5 +1,20 @@
 .footer {
 	margin-top: 10rem;
+	position: relative;
+	&::before {
+		content: "";
+		position: absolute;
+		top: 325px;
+		right: unset;
+		bottom: unset;
+		width: 1006px;
+		height: 594px;
+		right: -100px;
+		top: -475px;
+		background: url(/assets/shared/desktop/bg-pattern-leaf.svg);
+		z-index: -2;
+	}
+
 	&__top {
 		background: $primary-peach;
 		margin-bottom: -70px;
@@ -12,6 +27,13 @@
 		align-items: center;
 		text-align: center;
 		gap: $grid-gutter-small;
+		overflow: hidden;
+
+		& > img {
+			position: absolute;
+			right: 0;
+			z-index: 1000;
+		}
 
 		p {
 			color: $primary-white;

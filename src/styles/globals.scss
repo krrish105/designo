@@ -97,8 +97,10 @@ header {
 	color: $primary-white;
 	padding: 4rem 1.5rem;
 	gap: 4rem;
-
 	flex-direction: column;
+	overflow: hidden;
+	position: relative;
+
 	& > div:first-child {
 		max-width: 28rem;
 		display: flex;
@@ -106,13 +108,24 @@ header {
 		justify-content: center;
 		gap: $grid-gutter;
 		text-align: center;
+		z-index: 1;
 	}
 
+	& > img {
+		position: absolute;
+		top: -3rem;
+		left: 0rem;
+	}
 	@media (min-width: $screen-min-tablet) {
 		border-radius: $border-radius-card;
 		padding: 4rem 3.5rem;
 		& > div:first-child {
 			text-align: start;
+		}
+		& > img {
+			position: absolute;
+			top: -8rem;
+			left: -2rem;
 		}
 	}
 	@media (min-width: $screen-min-laptop) {

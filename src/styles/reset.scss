@@ -49,6 +49,7 @@ h3 {
 img {
 	max-width: 100%;
 	height: auto;
+	display: block;
 }
 
 ul li {
@@ -61,6 +62,7 @@ address {
 
 textarea {
 	resize: none;
+	font-family: inherit;
 }
 
 form {
@@ -71,6 +73,11 @@ form {
 	gap: $grid-gutter-medium;
 	button {
 		margin-left: auto;
+	}
+	.submit__btn__container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
 	}
 }
 
