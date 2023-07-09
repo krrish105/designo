@@ -6,7 +6,7 @@ const ProjectCard = ({ image, heading, description }: any) => {
 		<div className={style.card__container}>
 			<Image src={image} alt='' width={350} height={320} />
 			<div>
-				<h3>{heading}</h3>
+				<h2>{heading}</h2>
 				<p>{description}</p>
 			</div>
 		</div>

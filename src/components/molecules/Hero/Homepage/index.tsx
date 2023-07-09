@@ -15,6 +15,7 @@ const HomeHero = () => {
 					width={500}
 					height={753}
 					alt=''
+					priority
 				/>
 			</picture>
 		</Hero>

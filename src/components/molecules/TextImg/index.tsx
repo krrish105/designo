@@ -16,7 +16,7 @@ const TextImg = ({ heading, description, imgDirection, images }: any) => {
 							srcSet={images[0]}
 						/>
 						<source
-							media='(min-width:480px) and (max-width:1024px)'
+							media='(min-width:480px) and (max-width:1200px)'
 							srcSet={images[1]}
 						/>
 						<img src={images[2]} alt='' width={476} height={714} />

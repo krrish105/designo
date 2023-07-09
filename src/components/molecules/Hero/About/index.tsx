@@ -1,5 +1,6 @@
 import Hero from "@/components/molecules/Hero";
 import string from "@/utils/strings/data.json";
+import Image from "next/image";
 
 const AboutHero = () => {
 	return (
@@ -21,12 +22,13 @@ const AboutHero = () => {
 					media='(min-width:768px) and (max-width:1024px)'
 					srcSet='/assets/about/desktop/image-about-hero.jpg'
 				/>
-				<img
+				<Image
 					src='/assets/about/desktop/image-about-hero.jpg'
 					alt='Flowers'
 					width={483}
 					height={480}
 					className='hero__phoneImg'
+					priority
 				/>
 			</picture>
 		</Hero>

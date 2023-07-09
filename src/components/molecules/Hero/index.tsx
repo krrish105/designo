@@ -9,11 +9,12 @@ const Hero = ({ heading, description, location, children }: any) => {
 			<div className={style.hero__container}>
 				<div className={`${style.hero} ${style[locationClass]}`}>
 					<div className={style.hero__content}>
-						<p className='hero__heading'>{heading}</p>
+						<h1 className='hero__heading'>{heading}</h1>
 						<p className='hero__description'>{description}</p>
 						{location === "home" && (
 							<Link href='/company' className='btn btn-dark'>
-								Learn More
+								Learn more
+								<span className='sr-only'>about Designo</span>
 							</Link>
 						)}
 					</div>
@@ -24,6 +25,7 @@ const Hero = ({ heading, description, location, children }: any) => {
 							height={640}
 							alt=''
 							className={style.hero__ovalImg}
+							priority
 						/>
 						{children}
 					</div>

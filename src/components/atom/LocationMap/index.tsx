@@ -33,6 +33,7 @@ const LocationMap = ({
 				</div>
 			</div>
 			<iframe
+				title='Map'
 				src={map}
 				width='350'
 				height='320'
