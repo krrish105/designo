@@ -14,7 +14,7 @@
 		flex-direction: column;
 		gap: $grid-gutter-small;
 		text-align: center;
-		h3 {
+		h2 {
 			color: $primary-peach-text;
 			font-size: 1.25rem;
 			font-weight: 500;
@@ -32,7 +32,7 @@
 	&:hover {
 		background: $primary-peach;
 		& > div {
-			h3,
+			h2,
 			p {
 				color: white;
 			}
