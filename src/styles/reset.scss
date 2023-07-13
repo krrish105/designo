@@ -79,7 +79,9 @@ form {
 		align-items: center;
 	}
 }
-
+main {
+	overflow-x: hidden;
+}
 input,
 textarea {
 	background-color: transparent;
