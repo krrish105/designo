@@ -79,6 +79,9 @@ header {
 .home__hero__img {
 	width: auto;
 	height: 100%;
+	@media (min-width: $screen-min-desktop) {
+		right: 2rem !important;
+	}
 }
 .homeServicesGrid {
 	// margin-top: 10rem;
