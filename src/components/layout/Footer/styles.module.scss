@@ -1,7 +1,6 @@
 .footer {
 	margin-top: 10rem;
 	position: relative;
-	overflow-x: hidden;
 	&::before {
 		content: "";
 		position: absolute;
@@ -163,8 +162,5 @@
 				max-width: 28.6875rem;
 			}
 		}
-	}
-	@media (min-width: $screen-min-desktop) {
-		overflow-x: visible;
 	}
 }
