@@ -38,7 +38,7 @@
 	}
 	& > div > img {
 		position: absolute;
-		top: 50px;
+		top: 2px;
 		right: -100px;
 	}
 	picture img {
@@ -68,6 +68,17 @@
 	&__container {
 		margin-bottom: 10rem !important;
 	}
+	&__home picture img {
+		width: auto;
+		height: 500px;
+		margin-top: 2rem !important;
+		right: 2rem !important;
+		@media (min-width: $screen-min-desktop) {
+			height: 100%;
+			margin-top: 0 !important;
+		}
+	}
+
 	@media (max-width: $screen-max-laptop) {
 		&__about {
 			picture img {
@@ -102,7 +113,10 @@
 		}
 		picture img {
 			bottom: -200px;
-			right: -100px !important;
+			right: -100px;
+		}
+		&__home picture img {
+			bottom: -150px;
 		}
 
 		&__about {
