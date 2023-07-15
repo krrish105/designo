@@ -145,10 +145,13 @@
 			max-width: 38rem;
 		}
 		picture img {
-			right: 0 !important;
+			right: 0;
 		}
 		&__about {
 			height: auto;
+			picture img {
+				right: 0 !important;
+			}
 		}
 		&__about &__content {
 			padding-left: 6rem;
