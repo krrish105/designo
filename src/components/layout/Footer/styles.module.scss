@@ -150,7 +150,6 @@
 		}
 	}
 	@media (min-width: $screen-min-laptop) {
-		overflow-x: visible;
 		& > div {
 			@include container();
 		}
@@ -164,5 +163,8 @@
 				max-width: 28.6875rem;
 			}
 		}
+	}
+	@media (min-width: $screen-min-desktop) {
+		overflow-x: visible;
 	}
 }
