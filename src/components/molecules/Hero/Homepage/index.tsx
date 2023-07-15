@@ -16,6 +16,7 @@ const HomeHero = () => {
 					height={753}
 					alt=''
 					priority
+					className='w-auto h-full'
 				/>
 			</picture>
 		</Hero>
