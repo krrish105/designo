@@ -1,6 +1,7 @@
 .footer {
 	margin-top: 10rem;
 	position: relative;
+	overflow-x: hidden;
 	&::before {
 		content: "";
 		position: absolute;
@@ -149,6 +150,7 @@
 		}
 	}
 	@media (min-width: $screen-min-laptop) {
+		overflow-x: visible;
 		& > div {
 			@include container();
 		}
