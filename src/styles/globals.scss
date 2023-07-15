@@ -80,8 +80,8 @@ header {
 	width: auto;
 	height: 500px;
 	margin-top: 2rem !important;
+	right: 2rem !important;
 	@media (min-width: $screen-min-desktop) {
-		right: 2rem !important;
 		height: 100%;
 		margin-top: 0 !important;
 	}
