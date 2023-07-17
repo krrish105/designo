@@ -15,7 +15,6 @@ const HomeHero = () => {
 					width={500}
 					height={753}
 					alt=''
-					priority
 					className='home__hero__img'
 				/>
 			</picture>
